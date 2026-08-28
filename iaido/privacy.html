@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="pt-BR" class="lang-pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IAIDO — Política de Privacidade e Termos de Uso / Privacy Policy and Terms of Use</title>
+<meta name="description" content="Política de Privacidade e Termos de Uso do jogo IAIDO, da Doldrums. Privacy Policy and Terms of Use for IAIDO, a game by Doldrums.">
+<style>
+  :root{
+    --paper:#f4efe4;
+    --paper-2:#eae2d2;
+    --ink:#1d1a14;
+    --ink-soft:#4a4437;
+    --ink-faint:#8d8471;
+    --rule:#cdc3ae;
+    --seal:#a3342a;
+    --seal-ink:#f4efe4;
+    --measure:34rem;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --paper:#17140f;
+      --paper-2:#100e0a;
+      --ink:#e8e1d2;
+      --ink-soft:#b6ad9a;
+      --ink-faint:#7d7461;
+      --rule:#3a342a;
+      --seal:#b8493c;
+      --seal-ink:#17140f;
+    }
+  }
+
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--paper);
+    background-image:
+      radial-gradient(120% 80% at 50% -10%, rgba(0,0,0,.05), transparent 60%),
+      repeating-linear-gradient(90deg, rgba(0,0,0,.012) 0 1px, transparent 1px 3px),
+      linear-gradient(180deg, var(--paper) 0%, var(--paper-2) 100%);
+    background-attachment:fixed;
+    color:var(--ink);
+    font:400 17px/1.72 Georgia,"Iowan Old Style","Times New Roman",serif;
+    text-rendering:optimizeLegibility;
+  }
+  .wrap{max-width:var(--measure);margin:0 auto;padding:0 1.4rem 5rem}
+
+  /* ---- troca de idioma ---- */
+  .lang-pt [lang="en"]{display:none}
+  .lang-en [lang="pt-BR"]{display:none}
+  .switch{display:flex;justify-content:flex-end;gap:.4rem;padding:1.1rem 0 0}
+  .switch button{
+    font:inherit;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;
+    background:none;border:1px solid var(--rule);color:var(--ink-faint);
+    padding:.3rem .7rem;cursor:pointer;border-radius:2px;
+    transition:color .18s, border-color .18s, background .18s;
+  }
+  .switch button:hover{color:var(--ink);border-color:var(--ink-faint)}
+  .switch button[aria-pressed="true"]{color:var(--paper);background:var(--ink);border-color:var(--ink)}
+
+  /* ---- cabeçalho ---- */
+  header.mast{padding:2.6rem 0 1.8rem;text-align:center}
+  .mark{
+    display:inline-block;width:2.9rem;height:2.9rem;line-height:2.9rem;
+    background:var(--seal);color:var(--seal-ink);
+    font-size:1.5rem;border-radius:3px;margin-bottom:1.1rem;
+    box-shadow:0 1px 0 rgba(0,0,0,.15);
+  }
+  h1{margin:0;font-size:2.1rem;font-weight:400;letter-spacing:.34em;text-indent:.34em;text-transform:uppercase}
+  .studio{margin:.7rem 0 0;color:var(--ink-faint);font-size:.82rem;letter-spacing:.2em;text-transform:uppercase}
+  .stamp{margin:1.6rem 0 0;color:var(--ink-soft);font-size:.9rem;font-style:italic}
+
+  /* ---- índice ---- */
+  nav.toc{
+    border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
+    padding:1rem 0;margin:2rem 0 3rem;
+    display:flex;gap:1.6rem;justify-content:center;flex-wrap:wrap;
+    font-size:.86rem;letter-spacing:.1em;text-transform:uppercase;
+  }
+  nav.toc a{color:var(--ink-soft);text-decoration:none;border-bottom:1px solid transparent}
+  nav.toc a:hover{color:var(--ink);border-bottom-color:var(--seal)}
+
+  /* ---- texto ---- */
+  h2{margin:3.6rem 0 .3rem;font-size:1.35rem;font-weight:400;letter-spacing:.06em}
+  h2 .kanji{color:var(--seal);margin-right:.5rem;font-size:1.1rem;vertical-align:.08em}
+  h2 + .sub{margin:0 0 1.6rem;color:var(--ink-faint);font-size:.84rem;letter-spacing:.14em;text-transform:uppercase}
+  h3{margin:2.2rem 0 .5rem;font-size:1rem;font-weight:700;letter-spacing:.02em}
+  h3 .n{color:var(--seal);font-weight:400;margin-right:.5rem}
+  p{margin:0 0 1.05rem}
+  ul{margin:0 0 1.05rem;padding-left:1.15rem}
+  li{margin:0 0 .45rem}
+  a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--seal)}
+  a:hover{color:var(--seal)}
+  strong{font-weight:700}
+  code{
+    font:400 .88em/1.5 ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+    background:rgba(128,110,70,.14);padding:.08em .35em;border-radius:2px;
+    overflow-wrap:anywhere;
+  }
+
+  .lede{
+    border-left:2px solid var(--seal);padding:.2rem 0 .2rem 1.1rem;
+    margin:0 0 2rem;color:var(--ink-soft);
+  }
+  .lede ul{margin:0;padding-left:1.05rem}
+
+  hr.rule{border:0;height:1px;background:var(--rule);margin:4.5rem 0 0}
+
+  footer.foot{
+    margin-top:3.2rem;padding-top:1.6rem;border-top:1px solid var(--rule);
+    color:var(--ink-faint);font-size:.86rem;text-align:center;
+  }
+  footer.foot p{margin:.35rem 0}
+
+  @media (max-width:520px){
+    body{font-size:16px}
+    h1{font-size:1.5rem;letter-spacing:.24em;text-indent:.24em}
+    .wrap{padding:0 1.1rem 3.5rem}
+  }
+  @media print{
+    body{background:#fff;color:#000}
+    .switch,nav.toc{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="switch" role="group" aria-label="Idioma / Language">
+    <button type="button" id="btn-pt" aria-pressed="true">Português</button>
+    <button type="button" id="btn-en" aria-pressed="false">English</button>
+  </div>
+
+  <header class="mast">
+    <span class="mark" aria-hidden="true">居</span>
+    <h1>IAIDO</h1>
+    <p class="studio">Doldrums</p>
+    <p class="stamp">
+      <span lang="pt-BR">Política de Privacidade e Termos de Uso · atualizado em 28 de agosto de 2026</span>
+      <span lang="en">Privacy Policy and Terms of Use · last updated 28 August 2026</span>
+    </p>
+  </header>
+
+  <nav class="toc">
+    <span lang="pt-BR"><a href="#privacidade">Privacidade</a></span>
+    <span lang="pt-BR"><a href="#termos">Termos de Uso</a></span>
+    <span lang="pt-BR"><a href="#contato">Contato</a></span>
+    <span lang="en"><a href="#privacidade">Privacy</a></span>
+    <span lang="en"><a href="#termos">Terms of Use</a></span>
+    <span lang="en"><a href="#contato">Contact</a></span>
+  </nav>
+
+  <main>
+
+  <!-- ============================================================
+       PRIVACIDADE / PRIVACY
+       ============================================================ -->
+  <section id="privacidade">
+
+    <div lang="pt-BR">
+      <h2><span class="kanji" aria-hidden="true">一</span>Política de Privacidade</h2>
+      <p class="sub">IAIDO · com.doldrums.iaido · Android</p>
+
+      <div class="lede">
+        <ul>
+          <li>O IAIDO <strong>não coleta dados pessoais</strong>. Não há conta, login, cadastro nem servidor nosso.</li>
+          <li>O jogo funciona <strong>inteiramente offline</strong>. O único uso de rede é o anúncio recompensado, e só quando você escolhe assisti-lo.</li>
+          <li>Os anúncios vêm do <strong>Google AdMob</strong>, que pode usar o identificador de publicidade do seu aparelho.</li>
+          <li>Seu progresso fica <strong>só no seu aparelho</strong> e é apagado quando você desinstala o jogo.</li>
+        </ul>
+      </div>
+
+      <p>Esta política explica o que acontece com os seus dados quando você joga IAIDO, publicado pela Doldrums ("nós"). Ela vale para a versão Android distribuída pelo Google Play.</p>
+
+      <h3><span class="n">1.</span>O que nós coletamos</h3>
+      <p><strong>Nada.</strong> Não pedimos nem recebemos seu nome, e-mail, telefone, localização, contatos, fotos, arquivos ou qualquer identificador. O jogo não tem cadastro, não tem servidor e não embarca SDK de análise, de telemetria ou de relatório de falhas. Não temos como saber quem joga, quando joga ou como joga.</p>
+
+      <h3><span class="n">2.</span>O que fica guardado no seu aparelho</h3>
+      <p>O jogo grava algumas coisas no armazenamento local do próprio aplicativo, para que o jogo continue de onde parou. Esses dados são privados do aplicativo, não são associados à sua identidade e <strong>nunca saem do aparelho</strong>:</p>
+      <ul>
+        <li>idioma escolhido;</li>
+        <li>preferências: volume, música, tremor de tela e dicas;</li>
+        <li>quais tropas você já enfrentou;</li>
+        <li>maior pontuação, número de partidas, total de cortes e de cortes divinos;</li>
+        <li>sua graduação e os desafios concluídos;</li>
+        <li>se a abertura já foi assistida.</li>
+      </ul>
+      <p>Para apagar tudo isso, basta desinstalar o aplicativo, ou limpar os dados do app nas configurações do Android.</p>
+
+      <h3><span class="n">3.</span>Anúncios</h3>
+      <p>O IAIDO é gratuito e se sustenta com <strong>um único formato de anúncio</strong>: um vídeo recompensado, oferecido depois que você morre, que permite continuar a partida. Ele é <strong>sempre opcional</strong> — recusar não tira nada de você, a partida termina como sempre terminou. Não há banner, não há anúncio no meio do jogo e nada é exibido sem que você toque para assistir.</p>
+      <p>Os anúncios são servidos pelo <strong>Google AdMob</strong>. Para escolher e medir o anúncio, o Google pode coletar e processar dados como o identificador de publicidade do aparelho, endereço IP, tipo de aparelho e de sistema, e a interação com o anúncio. Esse tratamento é feito pelo Google, sob as políticas dele:</p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy" rel="noopener">Política de Privacidade do Google</a></li>
+        <li><a href="https://policies.google.com/technologies/partner-sites" rel="noopener">Como o Google usa informações de sites ou apps parceiros</a></li>
+      </ul>
+      <p><strong>Consentimento.</strong> No Espaço Econômico Europeu, no Reino Unido e na Suíça, o formulário de consentimento do Google (UMP) aparece antes da primeira requisição de anúncio. Se você recusar, ou se o consentimento não permitir requisições, nós simplesmente nunca pedimos um anúncio: a oferta de continuar não aparece e o resto do jogo segue idêntico.</p>
+      <p><strong>Anúncios personalizados.</strong> Você pode redefinir ou excluir o identificador de publicidade do seu aparelho a qualquer momento em <em>Configurações → Privacidade → Anúncios</em>, no Android. Excluí-lo desliga a personalização; o jogo continua funcionando igual.</p>
+
+      <h3><span class="n">4.</span>Permissões</h3>
+      <p>O aplicativo declara <code>INTERNET</code>, usada exclusivamente pelos anúncios, e <code>com.google.android.gms.permission.AD_ID</code>, adicionada pelo SDK de anúncios do Google. Não pedimos câmera, microfone, localização, contatos, arquivos nem qualquer outra permissão.</p>
+
+      <h3><span class="n">5.</span>Crianças</h3>
+      <p>O IAIDO não é direcionado a crianças menores de 13 anos (ou da idade equivalente prevista na legislação do seu país) e não coletamos conscientemente dados de crianças. Se você é responsável e acredita que uma criança forneceu dados através do jogo, escreva para nós — como não recebemos dado nenhum, o caminho será orientá-lo quanto ao Google, que é quem trata os dados de publicidade.</p>
+
+      <h3><span class="n">6.</span>Seus direitos</h3>
+      <p>A LGPD (Lei 13.709/2018), o GDPR e leis equivalentes garantem acesso, correção e exclusão dos seus dados pessoais. Como não coletamos nem armazenamos dado algum sobre você, não há nada em nosso poder para acessar, corrigir ou excluir. Pedidos relativos a dados tratados pelo Google em razão dos anúncios devem ser dirigidos ao Google, pelos canais indicados na política dele. Se tiver qualquer dúvida, escreva para nós e ajudamos no que der.</p>
+
+      <h3><span class="n">7.</span>Mudanças nesta política</h3>
+      <p>Se o jogo passar a fazer algo diferente — por exemplo, salvar seu progresso na nuvem através do Google Play Games —, esta página é atualizada antes, e a data no topo muda junto. Vale sempre a versão publicada aqui.</p>
+    </div>
+
+    <div lang="en">
+      <h2><span class="kanji" aria-hidden="true">一</span>Privacy Policy</h2>
+      <p class="sub">IAIDO · com.doldrums.iaido · Android</p>
+
+      <div class="lede">
+        <ul>
+          <li>IAIDO <strong>collects no personal data</strong>. There is no account, no login, no sign-up, and no server of ours.</li>
+          <li>The game runs <strong>entirely offline</strong>. The only network use is the rewarded ad, and only when you choose to watch it.</li>
+          <li>Ads are served by <strong>Google AdMob</strong>, which may use your device's advertising identifier.</li>
+          <li>Your progress stays <strong>on your device only</strong> and is erased when you uninstall the game.</li>
+        </ul>
+      </div>
+
+      <p>This policy explains what happens to your data when you play IAIDO, published by Doldrums ("we"). It covers the Android version distributed through Google Play.</p>
+
+      <h3><span class="n">1.</span>What we collect</h3>
+      <p><strong>Nothing.</strong> We never ask for or receive your name, email, phone number, location, contacts, photos, files, or any identifier. The game has no sign-up, no server of ours, and ships no analytics, telemetry, or crash-reporting SDK. We have no way of knowing who plays, when, or how.</p>
+
+      <h3><span class="n">2.</span>What is stored on your device</h3>
+      <p>The game writes a few things to the app's own local storage, so that play picks up where you left off. This data is private to the app, is not tied to your identity, and <strong>never leaves the device</strong>:</p>
+      <ul>
+        <li>the language you chose;</li>
+        <li>preferences: volume, music, screen shake, and hints;</li>
+        <li>which troops you have already faced;</li>
+        <li>best score, number of runs, lifetime cuts and divine cuts;</li>
+        <li>your rank and completed challenges;</li>
+        <li>whether you have already watched the opening.</li>
+      </ul>
+      <p>To erase all of it, uninstall the app, or clear the app's data in Android settings.</p>
+
+      <h3><span class="n">3.</span>Advertising</h3>
+      <p>IAIDO is free and is supported by <strong>a single ad format</strong>: a rewarded video, offered after you die, that lets you continue the run. It is <strong>always optional</strong> — declining costs you nothing, and the run ends the way it always did. There are no banners, no interstitials, and nothing is shown unless you tap to watch it.</p>
+      <p>Ads are served by <strong>Google AdMob</strong>. To select and measure an ad, Google may collect and process data such as the device's advertising identifier, IP address, device and OS type, and your interaction with the ad. That processing is carried out by Google, under Google's own policies:</p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a></li>
+        <li><a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses information from sites or apps that use its services</a></li>
+      </ul>
+      <p><strong>Consent.</strong> In the European Economic Area, the United Kingdom, and Switzerland, Google's consent form (UMP) is shown before the first ad request. If you decline, or if consent does not permit requests, we simply never request an ad: the continue offer never appears and the rest of the game is unchanged.</p>
+      <p><strong>Personalised ads.</strong> You can reset or delete your device's advertising identifier at any time under <em>Settings → Privacy → Ads</em> on Android. Deleting it turns personalisation off; the game keeps working the same.</p>
+
+      <h3><span class="n">4.</span>Permissions</h3>
+      <p>The app declares <code>INTERNET</code>, used exclusively by ads, and <code>com.google.android.gms.permission.AD_ID</code>, added by Google's ads SDK. We request no camera, microphone, location, contacts, file, or other permission.</p>
+
+      <h3><span class="n">5.</span>Children</h3>
+      <p>IAIDO is not directed to children under 13 (or the equivalent age under the law of your country), and we do not knowingly collect data from children. If you are a parent or guardian and believe a child provided data through the game, write to us — since we receive no data at all, we will point you to Google, which is the party processing advertising data.</p>
+
+      <h3><span class="n">6.</span>Your rights</h3>
+      <p>Brazil's LGPD (Law 13.709/2018), the GDPR, and equivalent laws grant you access to, correction of, and deletion of your personal data. Because we neither collect nor store any data about you, we hold nothing to access, correct, or delete. Requests concerning data processed by Google in connection with ads must be directed to Google, through the channels named in its policy. If anything here is unclear, write to us and we will help where we can.</p>
+
+      <h3><span class="n">7.</span>Changes to this policy</h3>
+      <p>If the game ever does something different — for example, saving your progress to the cloud through Google Play Games — this page is updated first, and the date at the top changes with it. The version published here is always the one that applies.</p>
+    </div>
+
+  </section>
+
+  <hr class="rule">
+
+  <!-- ============================================================
+       TERMOS / TERMS
+       ============================================================ -->
+  <section id="termos">
+
+    <div lang="pt-BR">
+      <h2><span class="kanji" aria-hidden="true">二</span>Termos de Uso</h2>
+      <p class="sub">Vigentes desde 28 de agosto de 2026</p>
+
+      <h3><span class="n">1.</span>Aceitação</h3>
+      <p>Ao instalar ou jogar IAIDO, você concorda com estes Termos e com a Política de Privacidade acima. Se não concordar, não instale o jogo, ou desinstale-o.</p>
+
+      <h3><span class="n">2.</span>Licença</h3>
+      <p>Concedemos a você uma licença pessoal, gratuita, não exclusiva, intransferível e revogável para instalar e jogar IAIDO em aparelhos que você controla, para uso não comercial. O jogo é licenciado, não vendido.</p>
+
+      <h3><span class="n">3.</span>O que você não pode fazer</h3>
+      <ul>
+        <li>vender, alugar, redistribuir ou reempacotar o aplicativo, incluindo publicar o APK em outras lojas ou sites;</li>
+        <li>modificar, descompilar ou fazer engenharia reversa do jogo, salvo na medida em que a lei permita expressamente;</li>
+        <li>usar automação, emulação de toque, modificação de memória ou qualquer artifício para forjar recompensas de anúncio, inflar pontuação ou fraudar o sistema de anúncios;</li>
+        <li>usar o jogo para qualquer finalidade ilícita.</li>
+      </ul>
+
+      <h3><span class="n">4.</span>Anúncios e recompensas</h3>
+      <p>Depois de uma morte, o jogo pode oferecer um vídeo recompensado que permite continuar a partida. A recompensa é <strong>exclusivamente dentro do jogo</strong>: não tem valor monetário, não é um bem, não é transferível, não é reembolsável e não pode ser trocada por dinheiro ou por qualquer outra coisa. A disponibilidade do anúncio depende do Google e não é garantida — quando não há anúncio, a oferta simplesmente não aparece. Podemos alterar, suspender ou remover esse recurso em qualquer atualização.</p>
+
+      <h3><span class="n">5.</span>Progresso e recordes</h3>
+      <p>Seu progresso é gravado apenas no seu aparelho. Desinstalar o jogo, limpar os dados do aplicativo ou trocar de aparelho apaga tudo, e não temos como recuperar — não existe cópia nossa. Atualizações futuras podem introduzir salvamento vinculado a uma conta; se isso acontecer, estes Termos e a Política de Privacidade serão atualizados antes.</p>
+
+      <h3><span class="n">6.</span>Propriedade intelectual</h3>
+      <p>O jogo, seu código, arte, som, textos, o nome IAIDO e o nome Doldrums pertencem à Doldrums e são protegidos por lei. Você recebe uma licença para jogar, não a propriedade de nada.</p>
+      <p><strong>Vídeos e transmissões são bem-vindos.</strong> Você pode gravar, transmitir e publicar partidas de IAIDO, inclusive em canais monetizados, sem pedir autorização — desde que o conteúdo não sugira que o jogo é seu, nem sirva para distribuir cópias do aplicativo.</p>
+
+      <h3><span class="n">7.</span>Garantias</h3>
+      <p>O jogo é fornecido "como está", sem garantia de que estará livre de erros, de que funcionará em todo aparelho ou de que ficará disponível indefinidamente. Nada aqui afasta os direitos que a legislação de consumo aplicável (no Brasil, o Código de Defesa do Consumidor) garante a você e que não podem ser afastados por contrato.</p>
+
+      <h3><span class="n">8.</span>Limitação de responsabilidade</h3>
+      <p>Na máxima extensão permitida pela lei aplicável, a Doldrums não responde por danos indiretos, incidentais ou consequentes decorrentes do uso do jogo, incluindo perda de progresso. Como o jogo é gratuito, qualquer responsabilidade eventualmente reconhecida fica limitada ao valor que você pagou por ele.</p>
+
+      <h3><span class="n">9.</span>Alterações e encerramento</h3>
+      <p>Podemos atualizar o jogo e estes Termos. A versão vigente é sempre a publicada nesta página, com a data no topo; continuar jogando após uma alteração significa aceitá-la. Podemos também descontinuar a distribuição do jogo a qualquer momento.</p>
+
+      <h3><span class="n">10.</span>Lei aplicável</h3>
+      <p>Estes Termos são regidos pela lei brasileira. Fica eleito o foro do domicílio do usuário para dirimir qualquer controvérsia, sem prejuízo das normas de proteção do consumidor aplicáveis no seu país de residência.</p>
+    </div>
+
+    <div lang="en">
+      <h2><span class="kanji" aria-hidden="true">二</span>Terms of Use</h2>
+      <p class="sub">Effective 28 August 2026</p>
+
+      <h3><span class="n">1.</span>Acceptance</h3>
+      <p>By installing or playing IAIDO, you agree to these Terms and to the Privacy Policy above. If you do not agree, do not install the game, or uninstall it.</p>
+
+      <h3><span class="n">2.</span>Licence</h3>
+      <p>We grant you a personal, free, non-exclusive, non-transferable, revocable licence to install and play IAIDO on devices you control, for non-commercial use. The game is licensed, not sold.</p>
+
+      <h3><span class="n">3.</span>What you may not do</h3>
+      <ul>
+        <li>sell, rent, redistribute, or repackage the app, including publishing the APK on other stores or websites;</li>
+        <li>modify, decompile, or reverse engineer the game, except to the extent the law expressly permits;</li>
+        <li>use automation, touch emulation, memory editing, or any other trick to forge ad rewards, inflate scores, or defraud the ad system;</li>
+        <li>use the game for any unlawful purpose.</li>
+      </ul>
+
+      <h3><span class="n">4.</span>Ads and rewards</h3>
+      <p>After a death, the game may offer a rewarded video that lets you continue the run. The reward is <strong>strictly in-game</strong>: it has no monetary value, is not property, is not transferable, is not refundable, and cannot be exchanged for money or anything else. Ad availability depends on Google and is not guaranteed — when no ad is available, the offer simply does not appear. We may change, suspend, or remove this feature in any update.</p>
+
+      <h3><span class="n">5.</span>Progress and records</h3>
+      <p>Your progress is written only to your device. Uninstalling the game, clearing the app's data, or switching devices erases it, and we cannot restore it — no copy of it exists on our side. Future updates may introduce account-linked saving; if that happens, these Terms and the Privacy Policy will be updated first.</p>
+
+      <h3><span class="n">6.</span>Intellectual property</h3>
+      <p>The game, its code, art, sound, text, the name IAIDO, and the name Doldrums belong to Doldrums and are protected by law. You receive a licence to play, not ownership of anything.</p>
+      <p><strong>Videos and streams are welcome.</strong> You may record, stream, and publish IAIDO gameplay, including on monetised channels, without asking permission — as long as the content does not suggest the game is yours and is not used to distribute copies of the app.</p>
+
+      <h3><span class="n">7.</span>Warranties</h3>
+      <p>The game is provided "as is", with no warranty that it will be free of errors, that it will run on every device, or that it will remain available indefinitely. Nothing here removes rights granted to you by applicable consumer law (in Brazil, the Consumer Protection Code) that cannot be waived by contract.</p>
+
+      <h3><span class="n">8.</span>Limitation of liability</h3>
+      <p>To the fullest extent permitted by applicable law, Doldrums is not liable for indirect, incidental, or consequential damages arising from use of the game, including loss of progress. As the game is free, any liability that is nonetheless established is limited to the amount you paid for it.</p>
+
+      <h3><span class="n">9.</span>Changes and termination</h3>
+      <p>We may update the game and these Terms. The version in force is always the one published on this page, with the date at the top; continuing to play after a change means accepting it. We may also discontinue distribution of the game at any time.</p>
+
+      <h3><span class="n">10.</span>Governing law</h3>
+      <p>These Terms are governed by the laws of Brazil. The courts of the user's domicile are the elected forum for any dispute, without prejudice to the consumer protection rules applicable in your country of residence.</p>
+    </div>
+
+  </section>
+
+  <hr class="rule">
+
+  <section id="contato">
+    <div lang="pt-BR">
+      <h2><span class="kanji" aria-hidden="true">三</span>Contato</h2>
+      <p class="sub">Doldrums</p>
+      <p>Dúvidas sobre privacidade, sobre estes Termos ou sobre o jogo: <a href="mailto:doldrumstudio@gmail.com">doldrumstudio@gmail.com</a>. Respondemos em português e em inglês.</p>
+    </div>
+    <div lang="en">
+      <h2><span class="kanji" aria-hidden="true">三</span>Contact</h2>
+      <p class="sub">Doldrums</p>
+      <p>Questions about privacy, about these Terms, or about the game: <a href="mailto:doldrumstudio@gmail.com">doldrumstudio@gmail.com</a>. We answer in Portuguese and English.</p>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="foot">
+    <p lang="pt-BR">IAIDO é um jogo da Doldrums · com.doldrums.iaido</p>
+    <p lang="en">IAIDO is a game by Doldrums · com.doldrums.iaido</p>
+    <p>© 2026 Doldrums</p>
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  var root = document.documentElement;
+  var pt = document.getElementById('btn-pt');
+  var en = document.getElementById('btn-en');
+
+  function set(lang, remember){
+    var isEn = lang === 'en';
+    root.className = isEn ? 'lang-en' : 'lang-pt';
+    root.lang = isEn ? 'en' : 'pt-BR';
+    pt.setAttribute('aria-pressed', String(!isEn));
+    en.setAttribute('aria-pressed', String(isEn));
+    if (remember){ try { localStorage.setItem('iaido.policyLang', isEn ? 'en' : 'pt'); } catch(e){} }
+  }
+
+  var saved = null;
+  try { saved = localStorage.getItem('iaido.policyLang'); } catch(e){}
+  if (saved !== 'pt' && saved !== 'en'){
+    var nav = (navigator.language || 'pt').toLowerCase();
+    saved = nav.indexOf('pt') === 0 ? 'pt' : 'en';
+  }
+  set(saved, false);
+
+  pt.addEventListener('click', function(){ set('pt', true); });
+  en.addEventListener('click', function(){ set('en', true); });
+})();
+</script>
+</body>
+</html>
